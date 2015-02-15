@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Virtual Mind</title>
+	<link rel="import" href="Components/polymer/polymer.html">
+	<link rel="import" href="Components/paper-toggle-button/paper-toggle-button.html">
+	<link rel="import" href="Components/paper-input/paper-input.html">
+	<link rel="import" href="Components/paper-button/paper-button.html">
+	<link rel="import" href="Components/paper-slider/paper-slider.html">
+	<link rel="import" href="card-element.html">
+	<link rel="import" href="to-do-element.html">
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<script src="jquery.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<paper-toggle-button id="switch" touch-action="pan-y"></paper-toggle-button>
+	<div id="Dark"></div>
+	<div id="Header">
+		Virtual Mind
+	</div>
+	<div>
+		<table id="table">
+			<tr>
+				<td><div class="box" id="box1"><card-element></card-element></div></td><td></td>
+				<td><div class="box" id="box2"><card-element></card-element></div></td><td></td>
+				<td><div class="box" id="box3"><card-element></card-element></div></td>
+			</tr>
+			<br>
+			<tr>
+				<td><div class="box" id="box4"><card-element></card-element></div></td><td></td>
+				<td><div class="box" id="box5"><card-element></card-element></div></td><td></td>
+				<td><div class="box" id="box6"><card-element></card-element></div></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="todo"><to-do-element></to-do-element></div>
+	<div id="notes"><strong style="font-size:24px">NOTES</strong>
+		<paper-input floatinglabel label="Make your notes here"></paper-input>
+		<paper-input floatinglabel label="Make your notes here"></paper-input>
+		<paper-input floatinglabel label="Make your notes here"></paper-input>
+		<paper-input floatinglabel label="Make your notes here"></paper-input>
+	</div>
+
+	<div id="Movie">INTERSTELLAR(2014)<br>This sci-fi movie provided us with breathtaking visuals and heartthrobbing music to provide us an experience of epic proportions never-felt-before. Christopher Nolan is the director...need we say more!!<iframe width="560" height="350" src="https://www.youtube.com/embed/zSWdZVtXT7E" frameborder="0" allowfullscreen></iframe></div>
+	<div id="didYouKnow"></div>
+	<div id="question">
+		As I was going to Saint Ives,
+		I crossed the path of seven wives.
+		Every wife had seven sacks,
+		Every sack had seven cats,
+		Every cat had seven kittens,
+		Kittens, cats, sacks, wives,
+		How many were going to Saint Ives?
+
+		<div center horizontal layout>
+      		<div>Possible range of answer</div>
+      		<paper-slider min-"0" value="0" max="999" editable id="slider"></paper-slider>
+    	</div><br>
+    	<paper-button id="button">Show answer</paper-button>
+    	<div id="answer">It is 1.<br>
+			You are PASSING those people. You are the ONLY person going from X to St Ives, they are going from St Ives to X</div>
+	</div>
+
+
+	</div>
+	<div id="thought"></div>
+	<div id="Note">More features on the way...</div>
+	<div id="Footer">Designed and developed by Rishabh Agarwal</div>
+</body>
+</html>

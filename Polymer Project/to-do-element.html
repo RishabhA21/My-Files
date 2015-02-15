@@ -1,0 +1,45 @@
+<link rel="import" href="Components/polymer/polymer.html">
+<link rel="import" href="Components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="Components/paper-input/paper-input.html">
+<link rel="import" href="Components/paper-radio-button/paper-radio-button.html">
+<link rel="import" href="Components/paper-radio-group/paper-radio-group.html">
+
+<polymer-element name="to-do-element">
+	<template>
+    	<style>    
+      		  *{background-color: #cccccc;}
+            #TODO{font-size: 32px;}
+            #radioHead{font-size: 32px;}
+            #toDoList{position: absolute;width: 200px;left: 100px;top: 55px;}
+            #radioGroup{position: absolute;width: 200px;right: 100px;top: -5px;}
+    	</style>
+	     <div id="toDoList">
+         <div id="TODO">To-Do List</div>
+         <paper-input floatinglabel label="Item 1"></paper-input>
+         <paper-checkbox></paper-checkbox>
+         <paper-input floatinglabel label="Item 2"></paper-input>
+         <paper-checkbox></paper-checkbox>
+         <paper-input floatinglabel label="Item 3"></paper-input>
+         <paper-checkbox></paper-checkbox>
+         <paper-input floatinglabel label="Item 4"></paper-input>
+         <paper-checkbox></paper-checkbox>
+         <paper-input floatinglabel label="Item 5"></paper-input><paper-checkbox></paper-checkbox>
+       </div>
+
+       <div id="radioGroup">
+          <div id="radioHead"><paper-input floatinglabel label="Title" value="Title/Heading"></paper-input></div>
+         <paper-radio-group>
+            <paper-input floatinglabel label="Item 1"></paper-input><paper-radio-button toggles></paper-radio-button>
+            <paper-input floatinglabel label="Item 2"></paper-input><paper-radio-button toggles>
+            </paper-radio-button><paper-input floatinglabel label="Item 3"></paper-input><paper-radio-button toggles></paper-radio-button>
+         </paper-radio-group>
+       </div>
+    </template>
+
+    <script>		
+		Polymer({
+			
+		});		
+	</script>
+
+</polymer-element>
